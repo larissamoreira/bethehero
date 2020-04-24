@@ -31,7 +31,7 @@ export default function Register() {
         try {
             const response = await api.post('ongs', data);
 
-            alert(`Seu id de acesso: ${response.data.id}`);
+            alert(`This is your ID to login: ${response.data.id}`);
 
             history.push('/');
         } catch(err) {
